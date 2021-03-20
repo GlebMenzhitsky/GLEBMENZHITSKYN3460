@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    div {color: #FFFFE0;
+        font-size: 12pt;
+        background-image: url(MarinaBaySands.jpg);
+        background-size: cover;}
+    
+    h1.main { font-size: 30pt;
+        font-style: oblique;
+        color: pink;}
+
+    legend.cool{ font-size: 28pt;
+        font-style: oblique;
+        color: pink;}
+       
+    #special{
+        font-style: oblique;
+    }
+
+    #serd {
+        position: absolute; right: 70%;
+        margin-bottom: 50px;
+    }
+    
+    h1::first-letter { font-size: 72pt; }
+
+
+</style> 
+</head>
+
+<meta charset="utf-8"/>
+<body>
+
+<form>
+
+<div><h2 class="main"> Отель гранд Будапешт </h2>
+<div><h1 class="main" ALIGN="middle"> Форма бронирование гостиницы </h1>
+
+
+<fieldset>
+ <legend class="cool"> Данные нового пользователя</legend>
+ <form action="/"method="post">  
+ <input type="text" name="namePerson" maxlength="32" placeholder="фамилия"> 
+ <input type="text" name="namePerson" maxlength="12" placeholder="имя"><br> <br>
+
+ <input type="text" name="namePerson" maxlength="32" placeholder="СЕРИЯ ПАСПОРТА"> 
+ <input type="text" name="namePerson" maxlength="12" placeholder="ТЕЛЕФОН  "><br> <br>
+
+ <input type="submit" name="submit" value="отправить"><!--кнопка отправить-->
+ <input type="reset" name=""><!-- сброс --><br> <br>
+
+ <label for="id1"></label> Cтудент <input id1="apple"  type="checkbox" name="12" value="stydent"> <!--ставит галочку  по умолчанию отправляет значение on или off-->
+ <label for="id2"></label> Пенсионер <input id2="sliva" type="checkbox" name="12" value="senior"> <!--также ставит галочку но так как мы задали ему значение value = senior --><br> <br>
+
+ <textarea name="text" cols="12" rows="3 " placeholder="Адресс прописки по паспорту"></textarea><br> <!--текстовое поле cols-это строки rows-это столбцы-->
+    
+
+<fieldset>
+
+ <legend class="cool"> Дата заселения </legend>
+
+
+<select name="test2" size="3" ><br><!--size-это количество отображаемого блока(списка), (multiple="") multiple-это возможность выбрать не один как по умолчанию а сразу несколько или все-->
+     <option selected="">07.12.2012</option><!--по умолчанию даже после сброса будет txt-->
+     <option>08.12.2012</option>
+     <option>09.12.2012</option>
+     <option>10.12.2012</option>
+     <option>11.12.2012</option>
+     <option>12.12.2012</option>
+</select><br> <br>
+
+
+ 
+    
+    Количество комнат:
+    <br> 
+    <input type="appart" name="status" value="">Однокомнатная
+    <br>
+    <input type="appart" name="status" value="">Двухкомнатная
+    <br>
+    <input type="appart" name="status" value="">Трехкомнатная
+
+    <br><br>
+    <label id="special"> Коментарий (не обязательно) : </label>
+    <br>
+    <textarea rows="3" cols="40"></textarea>
+    <br>
+
+<input  type="submit" name="submit" value="Отправить">
+</fieldset> <br>
+
+
+
+
+<fieldset>
+ <legend class="cool"> Оплата бронирования</legend>
+
+ <from action="form_processing" method ="GET">
+    Имя на карте:<input id="serd" type="text" name="lastname"><br> <br>
+   
+    
+    Номер карты:<input id="serd" type="text" name="number"><br>  <br>
+    
+  
+    Год окончания:<input id="serd" type="number" name="year" min="2020" step="1"> <br>  <br>
+   
+    Оплата:        
+    <select name="money">
+        <option checked>Не выбрано</option>
+        <option value="male">100%</option>
+        <option value="female">50%</option>
+    </select>
+
+<p> Выберите способ обратной связи</p>
+<input type="checkbox" name="auto"> Смс |
+<input type="checkbox" name="fish"> Звонок |
+</fieldset>
+
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>       
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</form>
+
+
+</body>
+</html>
