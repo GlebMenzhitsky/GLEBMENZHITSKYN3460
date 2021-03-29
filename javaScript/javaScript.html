@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+    div {color: #FFFFE0;
+        font-size: 12pt;
+        background-image: url(Khabarovsk.jpg);
+        background-size: cover;}
+        
+</style>    
+ <div>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html"/>
+</head>
+
+
+ <form name="name3" id="id3">
+    <br>
+    Ваше имя: <input type="text" name="lastname"/><br>
+    Ваш email: <input type="email" name="email"/><br>
+    Ваш возраст: <input type="age" name="email"/><br>
+    <br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:"> 
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+    </form>
+<br>
+
+    <form name="name1" id="id1" action="form_proccessing" method="POST">
+    
+    Ваше имя: <input type="text" name="lastname"/><br>
+    Ваш email: <input type="text" name="email"/><br>
+    Пол: <select name="gender">
+    <option checked>Не выбрано</option>
+    <option value="male">Мужской</option>
+    <option value="female">Женский</option>
+</select>
+        
+    <input type="hidden" name="user_id" value="13214132531" /><br>
+        
+    Пользователь <input type="radio" name="status" value="user">
+    Менеджер <input type="radio" name="status" value="manager">
+    Админ <input type="radio" name="status" value="admin"><br><br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+        
+    <input type="submit" name="submitit" value="Отправить"> 
+</form>
+    
+<form name="name2" id="id2">
+    <br>
+        Ваше имя: <input type="text" name="lastname"/><br>
+        Ваш email: <input type="text" name="email"/><br><br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:"> 
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+
+
+
+<form name="name4" id="id4">
+    <br>
+        Сообщение: <input type="text" name="email"/><br><br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+
+<form name="name5" id="id5">
+    <br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+
+<form name="name6" id="id6">
+    <br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+
+<form name="name7" id="id7">
+    <br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:"> 
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+
+<form name="name8" id="id8">
+    <br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+
+<form name="name9" id="id9"> 
+    <br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+
+<form name="name10" id="id10">
+    <br>
+    <input onclick="alert(form.name)" type="button" name="but1" value="Показать имя формы:">
+    <input onclick="alert(form.id)" type="button" name="but1" value="Принадлежность">
+    <input onclick="delFunc(form.id)" type="button" name="but1" value="Сбросить">
+    <input onclick="showCount(form.id)" type="button" name="but1" value="Показать количество полей">
+</form>
+        
+        
+<script src="task.js"></script>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br> <br> <br> <br> <br> <br>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br>
+</div>
+
+</form>
+
+
+</body>
+</html>

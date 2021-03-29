@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>	
+		<script src="jquery-3.5.1.min.js"></script>
+	</head>
+ <body   class="content"><! background="Khabarovsk.jpg background: linear-gradient(90deg, rgba(2,0,32,1), rgba(19,19,68,1) 24%, rgba(41,95,106,1) 100%)">
+	
+	<div ><h1>Динамическая Таблица</h1></div>
+	
+
+
+
+<div class="content">
+    
+    <h2>Данная работа содержит динамическую таблицу размерами и характеристиками которой можно управлять. Изначально пользователь задает размеры таблицы, а затем имеет возможность изменять вид границ ячеек таблицы и удалять строки таблицы. Таблица и заголовок таблицы заполняются пользователем в онлайн режиме. Кнопкой random случайным образом выбирает обрабатывает дизайн ячейки и текста в этой ячейке.  </h2>
+  
+  </div>
+
+
+
+	<div background: linear-gradient(90deg, rgba(2,0,32,1), rgba(19,19,68,1) 24%, rgba(41,95,106,1)>
+		<form>
+			<div><span>Количество строк: </span> <input type="number" id="row" min="1" max="20" step="1" required /></div><br>
+			<div><span>Количество столбцов: </span> <input type="number" id="col" min="1" max="20" step="1" required /></div><br>
+			<input align="left" onclick="addTable()" type="button" name="but1" value="Создать таблицу"> 
+		</form>
+	</div>
+	<br>
+
+
+	<div id="functions" hidden>
+		<form>
+			<div>
+				Выбор размера границы: <br>
+
+				<input type="number" id="width" min="1" max="999" step="1" onchange="changerNumber()"/>
+			
+				<select id="border" size="1" onchange="changerList()">
+				<option disabled>Выберите границу</option>
+				<option value="none">none</option>
+				<option value="solid">continuous line</option>
+				<option value="dashed">dotted line</option>
+				<option value="double">double dotted line</option>
+				<option value="dotted">dotsline </option>
+				<option value="groove">Groove</option>
+				<option value="ridge">Ridge</option>
+				<option value="outset">Outset</option>
+				<option value="inset">Inset</option>
+				</select>
+				
+				<input align="left" onclick="editTable()" id="dynamicBut" type="button" name="but2" value="Применить"> 
+			</div>
+			Выбор заголовка: <br>
+			<div>
+				<input type="text" id="title" />
+				<input align="left" onclick="addTitle()" type="button" name="but3" value="Добавить"> 
+			</div>
+			Удалить строку №: <br>
+			<div>
+				<input type="number" id="rowDel" min="1" max="999" step="1"/>
+				<input align="left" onclick="deleteRow()" type="button" name="but4" value="Удалить"> 
+			</div>
+			<br>
+			<div>
+				<input align="left" onclick="magic()" type="button" name="but5" value="random"> 
+				<input align="left" onclick="destroyTable()" type="button" name="but6" value="Удалить таблицу"> 
+			</div>
+			
+		</form>
+       <br><br>
+	</div>
+	<script src="script.js"></script>
+ </body>
+</html>
+
